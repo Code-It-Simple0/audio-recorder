@@ -1,0 +1,79 @@
+/* Css */
+
+*{
+	margin : 0;
+	padding: 0;
+	font-family: Tahoma;
+}
+
+body {
+	width: 100vw;
+	height:130vh;
+	overflow-y: auto;
+	max-height:130vh;
+	display: flex;
+	position: relative;
+	overflow-x: hidden;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right,lightgreen 30%,cornflowerblue)
+}
+
+#audio_recorder__body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.mic_image {
+	width:200px;
+	height:200px;
+}
+
+.pause_play__button, .pause_play__button:focus{
+	padding: 10px 20px;
+	font-size: 15px;
+	font-weight: bolder;
+	border-radius:.4rem;
+	border:2px solid lightseagreen;
+	outline:none;
+}
+
+.view_all__link {
+	position: absolute;
+	top:15px;
+	right:30px;
+	color:white;
+	font-weight: bold;
+}
+
+#recordings {
+	display: flex;
+	margin-top: 10px;
+	flex-direction: column;
+	overflow-y: auto;
+	justify-content: center;
+}
+
+#recordings h2{
+	color:rgba(0,0,0,.85);
+	text-decoration: underline;
+}
+
+.recordings__item {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.recordings__item p {
+	font-weight: bold;
+	color:rgba(0,0,0,.7);
+	font-family: 'monospace';
+	font-weight: bold;
+	font-size: 17px;
+	margin: 4px 0 4px 5px;
+}
